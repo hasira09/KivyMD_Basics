@@ -1,29 +1,25 @@
-from kivy.uix.scrollview import ScrollView
 from kivymd.app import MDApp
-from kivymd.uix.list import ImageLeftWidget
-from kivymd.uix.list import MDList, ThreeLineAvatarListItem
-from kivymd.uix.screen import Screen
+from kivy.lang import Builder
+from kivymd.uix.list import OneLineListItem
 
+list_helper = """
+Screen:
+    ScrollView:
+        MDList:
+            id: container
 
+"""
 class TestApp(MDApp):
 
     def build(self):
-        screen = Screen()
+        screen = Builder.load_string(list_helper)
 
-        scroll = ScrollView()
-        list_view = MDList()
-        scroll.add_widget(list_view)
-
-        for i in range(20):
-            images = ImageLeftWidget(source="Kivy_logo.png")
-            items = ThreeLineAvatarListItem(text='Item ' + str(i), secondary_text='KivyMD',
-                                            tertiary_text='Hello World')
-
-            items.add_widget(images)
-            list_view.add_widget(items)
-
-        screen.add_widget(scroll)
         return screen
+
+    def on_start(self):
+        for i in range(20):
+            items = OneLineListItem(text='Item ' + str(i))
+            self.root.ids.container.add_widget(items)
 
 
 TestApp().run()
