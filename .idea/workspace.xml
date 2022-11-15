@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65c41c75-8879-4768-b6b6-9f8c82fb2083" name="Changes" comment="Lists (ThreeLineListItem)">
+    <list default="true" id="65c41c75-8879-4768-b6b6-9f8c82fb2083" name="Changes" comment="Lists (Adding Icons)">
+      <change afterPath="$PROJECT_DIR$/Kivy_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -24,18 +25,21 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HYGptxHOFFm3Upd4st3pZYOYgW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -129,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668538742336</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Lists (Adding Icons)">
+      <created>1668539797084</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668539797084</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +155,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Text and Icons" />
     <MESSAGE value="Buttons" />
     <MESSAGE value="Themes" />
@@ -154,6 +166,7 @@
     <MESSAGE value="Lists (OneListItem)" />
     <MESSAGE value="Lists (TwoLineListItem)" />
     <MESSAGE value="Lists (ThreeLineListItem)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lists (ThreeLineListItem)" />
+    <MESSAGE value="Lists (Adding Icons)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lists (Adding Icons)" />
   </component>
 </project>
