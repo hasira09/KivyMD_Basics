@@ -1,36 +1,44 @@
-from kivy.metrics import dp
+from kivy.core.window import Window
+from kivy.lang import Builder
 from kivymd.app import MDApp
-from kivymd.uix.datatables import MDDataTable
-from kivymd.uix.screen import Screen
+
+Window.size = (300, 500)
+
+screen_helper = """
+Screen:
+    BoxLayout:
+        orientation: 'vertical'
+        
+        #can use MDToolBar instead as well
+        MDTopAppBar:                
+            title: 'Demo App'
+            left_action_items: [["menu",lambda x: app.navigation_draw()]]
+            right_action_items: [["android",lambda x: app.navigation_draw()]]
+            elevation: 2
+            
+        MDLabel:
+            text: 'Hasira Mahel'
+            halign: 'center'
+            
+        MDBottomAppBar:
+            MDTopAppBar:
+                left_action_items: [["tea",lambda x: app.navigation_draw()]]
+                mode: 'end'
+                type: 'bottom'
+                icon: 'language-python'
+                on_action_button: app.navigation_draw()
+                elevation: 0
+"""
 
 
-class TestApp(MDApp):
+class NavApp(MDApp):
     def build(self):
-        screen = Screen()
-        table = MDDataTable(pos_hint={'center_x': 0.5, 'center_y': 0.5},
-                            size_hint=(0.9, 0.6),
-                            check=True,
-                            column_data=[
-                                ("Num", dp(20)),
-                                ("Food", dp(20)),
-                                ("Calories", dp(20))
-                            ],
-                            row_data=[
-                                ("1", "Submarines", "350"),
-                                ("2", "Bread", "250")
-                            ]
-                            )
-
-        table.bind(on_check_press=self.check_press)
-        table.bind(on_row_press=self.row_press)
-        screen.add_widget(table)
+        self.theme_cls.primary_palette = 'Purple'
+        screen = Builder.load_string(screen_helper)
         return screen
 
-    def check_press(self, instance_table, current_row):
-        print(self, instance_table, current_row)
-
-    def row_press(self, instance_table, instance_row):
-        print(self, instance_table, instance_row)
+    def navigation_draw(self):
+        print("Navigation")
 
 
-TestApp().run()
+NavApp().run()
