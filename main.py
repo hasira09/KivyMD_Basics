@@ -11,17 +11,51 @@ Screen:
             Screen:
                 BoxLayout:
                     orientation: 'vertical'
-        
+
                     #can use MDToolBar instead as well
                     MDTopAppBar:                
                         title: 'Demo App'
                         left_action_items: [['menu', lambda x: nav_drawer.set_state('toggle')]]
                         elevation: 2
-                        
+
                     Widget:
-                        
+
         MDNavigationDrawer
             id: nav_drawer
+            BoxLayout:
+                orientation: 'vertical'
+                spacing: '15dp'
+                padding: '5dp'
+                
+                Image:
+                    source: 'Hasira_PP.jpg'
+                
+                MDLabel:
+                    text: '     Hasira Mahel'
+                    font_style: 'Subtitle1'
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    
+                MDLabel:
+                    text: '       hasiramahel09@gmail.com'
+                    font_style: 'Caption'
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    
+                ScrollView:
+                    MDList:
+                        OneLineIconListItem:
+                            text: 'Profile'
+                            IconLeftWidget:
+                                icon: 'account-check'
+                        OneLineIconListItem:
+                            text: 'Payment'
+                            IconLeftWidget:
+                                icon: 'cash'
+                        OneLineIconListItem:
+                            text: 'Logout'
+                            IconLeftWidget:
+                                icon: 'logout'
 """
 
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65c41c75-8879-4768-b6b6-9f8c82fb2083" name="Changes" comment="ToolBar (Top &amp; Bottom)">
+    <list default="true" id="65c41c75-8879-4768-b6b6-9f8c82fb2083" name="Changes" comment="Navigation Drawer (I Part)">
+      <change afterPath="$PROJECT_DIR$/Hasira_PP.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -167,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668659243814</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Navigation Drawer (I Part)">
+      <created>1668670324071</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668670324071</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +206,7 @@
     <MESSAGE value="Lists (Builder Method)" />
     <MESSAGE value="Data Table" />
     <MESSAGE value="ToolBar (Top &amp; Bottom)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ToolBar (Top &amp; Bottom)" />
+    <MESSAGE value="Navigation Drawer (I Part)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navigation Drawer (I Part)" />
   </component>
 </project>
